@@ -1,0 +1,1101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Mr Goose - Responsive AJAX HTML Template</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <link href='http://fonts.googleapis.com/css?family=Antic+Didone|Sintony' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="assets/gui/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="content/mr-goose-responsive-ajax-html-template/css/style-icons.css" />
+        <link rel="stylesheet" type="text/css" href="content/mr-goose-responsive-ajax-html-template/css/style-social-icons.css" />
+        <link rel="shortcut icon" href="assets/gui/images/icon.ico" />
+
+        <script type="text/JavaScript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="libraries/js/syntax-highlighter/shCore.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushCss.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushJScript.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushPhp.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushSql.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushXml.js"></script>
+        <script type="text/Javascript" src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+            	<a href="javascript:void(0)" id="logo"></a>
+                <ul id="menu">
+                    <li>
+                        <a href="#getting-started">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="#settings">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#html">HTML Structure</a>
+                    </li>
+                    <li>
+                        <a href="#javascript">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="#icons">Icons</a>
+                    </li>
+                    <li>
+                    	<a href="#licences-credits">Licences & Credits</a>
+                    </li>
+                    <li>
+                    	<a href="#support">Support</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="content">
+            	<h1>
+                    Mr Goose<br />
+                    Responsive AJAX HTML Template
+                </h1>
+                
+                <section id="getting-started">
+                    <h2>Getting Started</h2>
+                    
+                    <h3>Introduction</h3>
+                    <p>
+                        Mr Goose is a professional responsive HTML5 & CSS3 template created for creative and portfolio websites.
+                    </p>
+                    <p>
+                        If you like this plugin, feel free to rate it five stars
+                        &nbsp;<img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />&nbsp;
+                        at your <a href="http://codecanyon.net/?ref=DOTonPAPER" target="_blank">CodeCanyon</a> account in <strong>Downloads</strong> section.
+                        If you encounter any problems, before rating the item, <a href="http://envato-support.dotonpaper.net/" target="_blank">contact us</a> so we can help you fix them.
+                    </p>
+                    <h3>How to use/install it</h3>
+                    <p>
+                        Unzip the file you downloaded and copy the content from folders <strong>sources/php</strong> or <strong>sources/html</strong> to your web server or where you need the website. I recomand using the PHP version (you will need to have PHP installed on your server) because it is split into components (header, footer, menu, ...). 
+                    </p>
+                </section>
+                
+                <section id="settings">
+                    <h2>Settings</h2>
+                    
+                    <h3>Change config.js file</h3>
+                    <p>
+                    	Go to <strong>assets/js/config.js</strong> and change the the variable's values.
+                    </p>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: js; toolbar: false;">
+                    <![CDATA[
+                        var websiteType = 'ajax', // Set Website Type (ajax or html)
+                        contentPosition = 'left', // Set Website ContentPosition (left or tight)
+                        pattern = 7, // Set Website Background Pattern (1 to 11)
+                        backgroundImage = 'forest', // Set Website Background Image (bridge, church, city, default, forest, ship, train, windmill, wolf)
+                        birdsFlyFrom = 'right', // Set the position from were the birds will appear (top, top-right, right, bottom-right, bottom, bottom-left, left, top-left)
+                        noBirds = 72, // Set the number of birds (a number 1 to n)
+                        twitterUser = 'dotonpaper', // Add a Twitter User for the Twitter widget. 
+                        flickrID = '22646823@N08', // Add a Flickr User ID for the Flicker widget.  
+                        contactAddress = '100 East 63rd Street, New York City, NY, United States', // Add the address for contact google map.  
+                        launchDate = '2020-01-01 00:00:00', // Date & Time when the website will be launched for the Comming Soon Page.
+                        launchDateFormat = 'YOWDHMS', // Date & Time format for the Comming Soon Page.
+                        launchDateLabels = ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Minutes', 'Seconds'], // Counter labels for the Comming Soon Page.
+                        launchDateLabelsForOne = ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second']; // Counter labels if only one count for the Comming Soon Page.
+                    ]]>
+                    </script>
+                    <!-- End Code -->      
+                    <br />
+            	
+                    <h3>Change or use your own background</h3>
+                    <p>
+                    	To add your own background go to folder <strong>assets/gui/images/background-images/default</strong> and add 5 images in png format:<br />
+                        - left-background.png (image that wil be under the birds when content is on left)<br />
+                        - left-foreground.png (image that wil be over the birds when content is on left)<br />
+                        - light.png (image that can be a star ex moon or sun)<br />
+                        - right-background.png (image that wil be under the birds when content is on right)<br />
+                        - right-foreground.png (image that wil be over the birds when content is on right)<br />
+                        Got to <strong>assets/js/config.js</strong> and change <strong>backgroundImage</strong> variable value to <strong>default</strong>.
+                    </p>
+                    <p>
+                        <strong>Note:</strong> Not all images are mandatory.
+                    </p>
+            	</section>
+                
+                <section id="html">
+                    <h2>HTML Structure</h2>
+                    
+                    <h3>Create a new page</h3>
+                    <p>
+                    	Duplicate the files <strong>new-page.php</strong> (if you selected the PHP version) or <strong>new-page.html</strong> (if you selected the HTML version) and change the names.<br />
+                        Add in <strong>&lt;div class="content"&gt;&lt;/div&gt;</strong> node the page content.
+                    </p>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        ...
+                        <div class="content">
+                            <h2><!-- Enter title here --></h2>
+                            <article>
+                                <!-- Enter HTML code here -->
+                            </article>
+                        </div>
+                        ...
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    <p>
+                        Please add the title in the <strong>&lt;h2&gt;&lt;/h2&gt;</strong> node and the rest of the html code in <strong>&lt;article&gt;&lt;/article&gt;</strong> node.
+                    </p>   
+                    
+                    <h3>Create interactive elements</h3>
+                    
+                    <h5>Tabs HTML Code</h5>
+                    <p>
+                    	Copy the code into your page and add the content.
+                    </p>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="tabs">
+                            <ul>
+                                <li><a href="#tabs-1"><!-- Tab 1 Title --></a></li>
+                                <li><a href="#tabs-2"><!-- Tab 2 Title --></a></li>
+                                <li><a href="#tabs-3"><!-- Tab 3 Title --></a></li>
+                                <li><a href="#tabs-n"><!-- Tab "n" Title --></a></li>
+                            </ul>
+                            <div id="tabs-1" class="tab-container">
+                                <p><!-- Content for Tab 1 --></p>
+                            </div>
+                            <div id="tabs-2" class="tab-container">
+                                <p><!-- Content for Tab 2 --></p>
+                            </div>
+                            <div id="tabs-3" class="tab-container">
+                                <p><!-- Content for Tab 3 --></p>
+                            </div>
+                            <div id="tabs-n" class="tab-container">
+                                <p><!-- Content for Tab "n" --></p>
+                            </div>
+                        </div>  
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h5>Accordion HTML Code</h5>
+                    <p>
+                    	Copy the code into your page and add the content.
+                    </p>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="accordion">
+                            <div class="accordion-head">
+                                <a href="javascript:void(0)"><!-- Accordion Section 1 Title --></a>
+                            </div>
+                            <div class="accordion-content">
+                                <p><!-- Content for Accordion Section 1 --></p>
+                            </div>
+                        
+                            <div class="accordion-head">
+                                <a href="javascript:void(0)"><!-- Accordion Section 2 Title --></a>
+                            </div>
+                            <div class="accordion-content">
+                                <p><!-- Content for Accordion Section 2 --></p>
+                            </div>
+                        
+                            <div class="accordion-head">
+                                <a href="javascript:void(0)"><!-- Accordion Section 3 Title --></a>
+                            </div>
+                            <div class="accordion-content">
+                                <p><!-- Content for Accordion Section 3 --></p>
+                            </div>
+                        
+                            <div class="accordion-head">
+                                <a href="javascript:void(0)"><!-- Accordion Section "n" Title --></a>
+                            </div>
+                            <div class="accordion-content">
+                                <p><!-- Content for Accordion Section "n" --></p>
+                            </div>
+                        </div>
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h5>Toggle HTML Code</h5>
+                    <p>
+                    	Copy the code into your page and add the content.
+                    </p>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="toggle-wrapper">
+                            <a class="toggle" href="javascript:void(0)"><!-- Toggle Title --></a>
+                            <div class="toggle-content">
+                                <p><!-- Toggle Content --></p>
+                            </div>
+                        </div>
+                    ]]>
+                    </script>
+                    <!-- End Code -->      
+                    <br /> 
+                    
+                    <h3>Create a Wall/Grid Gallery</h3>
+                    <p>
+                    	Copy the code into your page and create and modify the configuration files. View the documentation <strong><a href="wall-grid-gallery-jquery-plugin.html" target="_blank">here</a></strong> for more options. 
+                    </p>
+                    <h5>JSON Code</h5>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="DOPWallGridGallery-container">
+                            <a href="path to settings file/settings.json" class="dopwgg-settings JSON"></a>
+                            <a href="path to content file/content.json" class="dopwgg-content JSON"></a>
+                        </div> 
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h5>XML Code</h5>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="DOPWallGridGallery-container">
+                            <a href="path to settings file/settings.xml" class="dopwgg-settings XML"></a>
+                            <a href="path to content file/content.xml" class="dopwgg-content XML"></a>
+                        </div> 
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h3>Create a Thumbnail Gallery</h3>
+                    <p>
+                    	Copy the code into your page and create and modify the configuration files. View the documentation <strong><a href="thumbnail-gallery-jquery-plugin.html" target="_blank">here</a></strong> for more options. 
+                    </p>
+                    <h5>JSON Code</h5>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="DOPThumbnailGallery-container">
+                            <a href="path to settings file/settings.json" class="doptg-settings JSON"></a>
+                            <a href="path to content file/content.json" class="doptg-content JSON"></a>
+                        </div> 
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h5>XML Code</h5>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="DOPThumbnailGallery-container">
+                            <a href="path to settings file/settings.xml" class="doptg-settings XML"></a>
+                            <a href="path to content file/content.xml" class="doptg-content XML"></a>
+                        </div> 
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h3>Create a Thumbnail Scroller</h3>
+                    <p>
+                    	Copy the code into your page and create and modify the configuration files. View the documentation <strong><a href="thumbnail-scroller-jquery-plugin.html" target="_blank">here</a></strong> for more options. 
+                    </p>
+                    <h5>JSON Code</h5>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="DOPThumbnailScroller-container">
+                            <a href="path to settings file/settings.json" class="dopts-settings JSON"></a>
+                            <a href="path to content file/content.json" class="dopts-content JSON"></a>
+                        </div> 
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h5>XML Code</h5>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                    <![CDATA[
+                        <div class="DOPThumbnailScroller-container">
+                            <a href="path to settings file/settings.xml" class="dopts-settings XML"></a>
+                            <a href="path to content file/content.xml" class="dopts-content XML"></a>
+                        </div> 
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+            	</section>
+             
+                <section id="javascript">
+                    <h2>JavaScript</h2>
+            		
+                    <h3>Create AJAX links</h3>
+                    <p>
+                    	If you want to open your website content using AJAX go to <strong>assets/js/config.js</strong> and change <strong>websiteType</strong> variable value to <strong>ajax</strong>.
+                        For a link to open a page with AJAX add the class <strong>ajax-link</strong>:
+                    </p>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: js; toolbar: false;">
+                    <![CDATA[
+                        <a href="path to page" class="ajax-link">Page</a>
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+                    
+                    <h3>Add JavaScript code after content is loaded using AJAX</h3>
+                    <p>
+                        Go to <strong>assets/js/main.js</strong> and at the end of the file you have the function <strong>myJavaScriptCode</strong>. Add your code there.
+                    </p>
+                    <!-- Begin Code -->
+                    <script type="syntaxhighlighter" class="brush: js; toolbar: false;">
+                    <![CDATA[
+                        function myJavaScriptCode(){
+                            // My JavaScript Code
+                        }
+                    ]]>
+                    </script>
+                    <!-- End Code -->       
+                    <br />
+            	</section>
+                
+                <section id="icons">
+                    <h2>Icons</h2>
+                    
+                    <h5>Web Icons</h5>
+                    <ul class="icons">
+                        <li><span class="icon web icon-1"></span><span class="text">1</span></li>
+                        <li><span class="icon web icon-2"></span><span class="text">2</span></li>
+                        <li><span class="icon web icon-3"></span><span class="text">3</span></li>
+                        <li><span class="icon web icon-4"></span><span class="text">4</span></li>
+                        <li><span class="icon web icon-5"></span><span class="text">5</span></li>
+                        <li><span class="icon web icon-6"></span><span class="text">6</span></li>
+                        <li><span class="icon web icon-7"></span><span class="text">7</span></li>
+                        <li><span class="icon web icon-8"></span><span class="text">8</span></li>
+                        <li><span class="icon web icon-9"></span><span class="text">9</span></li>
+                        <li><span class="icon web icon-10"></span><span class="text">10</span></li>
+                        <li><span class="icon web icon-11"></span><span class="text">11</span></li>
+                        <li><span class="icon web icon-12"></span><span class="text">12</span></li>
+                        <li><span class="icon web icon-13"></span><span class="text">13</span></li>
+                        <li><span class="icon web icon-14"></span><span class="text">14</span></li>
+                        <li><span class="icon web icon-15"></span><span class="text">15</span></li>
+                        <li><span class="icon web icon-16"></span><span class="text">16</span></li>
+                        <li><span class="icon web icon-17"></span><span class="text">17</span></li>
+                        <li><span class="icon web icon-18"></span><span class="text">18</span></li>
+                        <li><span class="icon web icon-19"></span><span class="text">19</span></li>
+                        <li><span class="icon web icon-20"></span><span class="text">20</span></li>
+                        <li><span class="icon web icon-21"></span><span class="text">21</span></li>
+                        <li><span class="icon web icon-22"></span><span class="text">22</span></li>
+                        <li><span class="icon web icon-23"></span><span class="text">23</span></li>
+                        <li><span class="icon web icon-24"></span><span class="text">24</span></li>
+                        <li><span class="icon web icon-25"></span><span class="text">25</span></li>
+                        <li><span class="icon web icon-26"></span><span class="text">26</span></li>
+                        <li><span class="icon web icon-27"></span><span class="text">27</span></li>
+                        <li><span class="icon web icon-28"></span><span class="text">28</span></li>
+                        <li><span class="icon web icon-29"></span><span class="text">29</span></li>
+                        <li><span class="icon web icon-30"></span><span class="text">30</span></li>
+                        <li><span class="icon web icon-31"></span><span class="text">31</span></li>
+                        <li><span class="icon web icon-32"></span><span class="text">32</span></li>
+                        <li><span class="icon web icon-33"></span><span class="text">33</span></li>
+                        <li><span class="icon web icon-34"></span><span class="text">34</span></li>
+                        <li><span class="icon web icon-35"></span><span class="text">35</span></li>
+                        <li><span class="icon web icon-36"></span><span class="text">36</span></li>
+                        <li><span class="icon web icon-37"></span><span class="text">37</span></li>
+                        <li><span class="icon web icon-38"></span><span class="text">38</span></li>
+                        <li><span class="icon web icon-39"></span><span class="text">39</span></li>
+                        <li><span class="icon web icon-40"></span><span class="text">40</span></li>
+                        <li><span class="icon web icon-41"></span><span class="text">41</span></li>
+                        <li><span class="icon web icon-42"></span><span class="text">42</span></li>
+                        <li><span class="icon web icon-43"></span><span class="text">43</span></li>
+                        <li><span class="icon web icon-44"></span><span class="text">44</span></li>
+                        <li><span class="icon web icon-45"></span><span class="text">45</span></li>
+                        <li><span class="icon web icon-46"></span><span class="text">46</span></li>
+                        <li><span class="icon web icon-47"></span><span class="text">47</span></li>
+                        <li><span class="icon web icon-48"></span><span class="text">48</span></li>
+                        <li><span class="icon web icon-49"></span><span class="text">49</span></li>
+                        <li><span class="icon web icon-50"></span><span class="text">50</span></li>
+                        <li><span class="icon web icon-51"></span><span class="text">51</span></li>
+                        <li><span class="icon web icon-52"></span><span class="text">52</span></li>
+                        <li><span class="icon web icon-53"></span><span class="text">53</span></li>
+                        <li><span class="icon web icon-54"></span><span class="text">54</span></li>
+                        <li><span class="icon web icon-55"></span><span class="text">55</span></li>
+                        <li><span class="icon web icon-56"></span><span class="text">56</span></li>
+                        <li><span class="icon web icon-57"></span><span class="text">57</span></li>
+                        <li><span class="icon web icon-58"></span><span class="text">58</span></li>
+                        <li><span class="icon web icon-59"></span><span class="text">59</span></li>
+                        <li><span class="icon web icon-60"></span><span class="text">60</span></li>
+                        <li><span class="icon web icon-61"></span><span class="text">61</span></li>
+                        <li><span class="icon web icon-62"></span><span class="text">62</span></li>
+                        <li><span class="icon web icon-63"></span><span class="text">63</span></li>
+                        <li><span class="icon web icon-64"></span><span class="text">64</span></li>
+                        <li><span class="icon web icon-65"></span><span class="text">65</span></li>
+                        <li><span class="icon web icon-66"></span><span class="text">66</span></li>
+                        <li><span class="icon web icon-67"></span><span class="text">67</span></li>
+                        <li><span class="icon web icon-68"></span><span class="text">68</span></li>
+                        <li><span class="icon web icon-69"></span><span class="text">69</span></li>
+                        <li><span class="icon web icon-70"></span><span class="text">70</span></li>
+                        <li><span class="icon web icon-71"></span><span class="text">71</span></li>
+                        <li><span class="icon web icon-72"></span><span class="text">72</span></li>
+                        <li><span class="icon web icon-73"></span><span class="text">73</span></li>
+                        <li><span class="icon web icon-74"></span><span class="text">74</span></li>
+                        <li><span class="icon web icon-75"></span><span class="text">75</span></li>
+                        <li><span class="icon web icon-76"></span><span class="text">76</span></li>
+                        <li><span class="icon web icon-77"></span><span class="text">77</span></li>
+                        <li><span class="icon web icon-78"></span><span class="text">78</span></li>
+                        <li><span class="icon web icon-79"></span><span class="text">79</span></li>
+                        <li><span class="icon web icon-80"></span><span class="text">80</span></li>
+                        <li><span class="icon web icon-81"></span><span class="text">81</span></li>
+                        <li><span class="icon web icon-82"></span><span class="text">82</span></li>
+                        <li><span class="icon web icon-83"></span><span class="text">83</span></li>
+                        <li><span class="icon web icon-84"></span><span class="text">84</span></li>
+                        <li><span class="icon web icon-85"></span><span class="text">85</span></li>
+                        <li><span class="icon web icon-86"></span><span class="text">86</span></li>
+                        <li><span class="icon web icon-87"></span><span class="text">87</span></li>
+                        <li><span class="icon web icon-88"></span><span class="text">88</span></li>
+                        <li><span class="icon web icon-89"></span><span class="text">89</span></li>
+                        <li><span class="icon web icon-90"></span><span class="text">90</span></li>
+                        <li><span class="icon web icon-91"></span><span class="text">91</span></li>
+                        <li><span class="icon web icon-92"></span><span class="text">92</span></li>
+                        <li><span class="icon web icon-93"></span><span class="text">93</span></li>
+                        <li><span class="icon web icon-94"></span><span class="text">94</span></li>
+                        <li><span class="icon web icon-95"></span><span class="text">95</span></li>
+                        <li><span class="icon web icon-96"></span><span class="text">96</span></li>
+                        <li><span class="icon web icon-97"></span><span class="text">97</span></li>
+                        <li><span class="icon web icon-98"></span><span class="text">98</span></li>
+                        <li><span class="icon web icon-99"></span><span class="text">99</span></li>
+                        <li><span class="icon web icon-100"></span><span class="text">100</span></li>
+                        <li><span class="icon web icon-101"></span><span class="text">101</span></li>
+                        <li><span class="icon web icon-102"></span><span class="text">102</span></li>
+                        <li><span class="icon web icon-103"></span><span class="text">103</span></li>
+                        <li><span class="icon web icon-104"></span><span class="text">104</span></li>
+                        <li><span class="icon web icon-105"></span><span class="text">105</span></li>
+                        <li><span class="icon web icon-106"></span><span class="text">106</span></li>
+                        <li><span class="icon web icon-107"></span><span class="text">107</span></li>
+                        <li><span class="icon web icon-108"></span><span class="text">108</span></li>
+                        <li><span class="icon web icon-109"></span><span class="text">109</span></li>
+                        <li><span class="icon web icon-110"></span><span class="text">110</span></li>
+                        <li><span class="icon web icon-111"></span><span class="text">111</span></li>
+                        <li><span class="icon web icon-112"></span><span class="text">112</span></li>
+                        <li><span class="icon web icon-113"></span><span class="text">113</span></li>
+                        <li><span class="icon web icon-114"></span><span class="text">114</span></li>
+                        <li><span class="icon web icon-115"></span><span class="text">115</span></li>
+                        <li><span class="icon web icon-116"></span><span class="text">116</span></li>
+                        <li><span class="icon web icon-117"></span><span class="text">117</span></li>
+                        <li><span class="icon web icon-118"></span><span class="text">118</span></li>
+                        <li><span class="icon web icon-119"></span><span class="text">119</span></li>
+                        <li><span class="icon web icon-120"></span><span class="text">120</span></li>
+                        <li><span class="icon web icon-121"></span><span class="text">121</span></li>
+                        <li><span class="icon web icon-122"></span><span class="text">122</span></li>
+                        <li><span class="icon web icon-123"></span><span class="text">123</span></li>
+                        <li><span class="icon web icon-124"></span><span class="text">124</span></li>
+                        <li><span class="icon web icon-125"></span><span class="text">125</span></li>
+                        <li><span class="icon web icon-126"></span><span class="text">126</span></li>
+                        <li><span class="icon web icon-127"></span><span class="text">127</span></li>
+                        <li><span class="icon web icon-128"></span><span class="text">128</span></li>
+                        <li><span class="icon web icon-129"></span><span class="text">129</span></li>
+                        <li><span class="icon web icon-130"></span><span class="text">130</span></li>
+                        <li><span class="icon web icon-131"></span><span class="text">131</span></li>
+                        <li><span class="icon web icon-132"></span><span class="text">132</span></li>
+                        <li><span class="icon web icon-133"></span><span class="text">133</span></li>
+                        <li><span class="icon web icon-134"></span><span class="text">134</span></li>
+                        <li><span class="icon web icon-135"></span><span class="text">135</span></li>
+                        <li><span class="icon web icon-136"></span><span class="text">136</span></li>
+                        <li><span class="icon web icon-137"></span><span class="text">137</span></li>
+                        <li><span class="icon web icon-138"></span><span class="text">138</span></li>
+                        <li><span class="icon web icon-139"></span><span class="text">139</span></li>
+                        <li><span class="icon web icon-140"></span><span class="text">140</span></li>
+                        <li><span class="icon web icon-141"></span><span class="text">141</span></li>
+                        <li><span class="icon web icon-142"></span><span class="text">142</span></li>
+                        <li><span class="icon web icon-143"></span><span class="text">143</span></li>
+                        <li><span class="icon web icon-144"></span><span class="text">144</span></li>
+                        <li><span class="icon web icon-145"></span><span class="text">145</span></li>
+                        <li><span class="icon web icon-146"></span><span class="text">146</span></li>
+                        <li><span class="icon web icon-147"></span><span class="text">147</span></li>
+                        <li><span class="icon web icon-148"></span><span class="text">148</span></li>
+                        <li><span class="icon web icon-149"></span><span class="text">149</span></li>
+                        <li><span class="icon web icon-150"></span><span class="text">150</span></li>
+                        <li><span class="icon web icon-151"></span><span class="text">151</span></li>
+                        <li><span class="icon web icon-152"></span><span class="text">152</span></li>
+                        <li><span class="icon web icon-153"></span><span class="text">153</span></li>
+                        <li><span class="icon web icon-154"></span><span class="text">154</span></li>
+                        <li><span class="icon web icon-155"></span><span class="text">155</span></li>
+                        <li><span class="icon web icon-156"></span><span class="text">156</span></li>
+                        <li><span class="icon web icon-157"></span><span class="text">157</span></li>
+                        <li><span class="icon web icon-158"></span><span class="text">158</span></li>
+                        <li><span class="icon web icon-159"></span><span class="text">159</span></li>
+                        <li><span class="icon web icon-160"></span><span class="text">160</span></li>
+                        <li><span class="icon web icon-161"></span><span class="text">161</span></li>
+                        <li><span class="icon web icon-162"></span><span class="text">162</span></li>
+                        <li><span class="icon web icon-163"></span><span class="text">163</span></li>
+                        <li><span class="icon web icon-164"></span><span class="text">164</span></li>
+                        <li><span class="icon web icon-165"></span><span class="text">165</span></li>
+                        <li><span class="icon web icon-166"></span><span class="text">166</span></li>
+                        <li><span class="icon web icon-167"></span><span class="text">167</span></li>
+                        <li><span class="icon web icon-168"></span><span class="text">168</span></li>
+                        <li><span class="icon web icon-169"></span><span class="text">169</span></li>
+                        <li><span class="icon web icon-170"></span><span class="text">170</span></li>
+                        <li><span class="icon web icon-171"></span><span class="text">171</span></li>
+                        <li><span class="icon web icon-172"></span><span class="text">172</span></li>
+                        <li><span class="icon web icon-173"></span><span class="text">173</span></li>
+                        <li><span class="icon web icon-174"></span><span class="text">174</span></li>
+                        <li><span class="icon web icon-175"></span><span class="text">175</span></li>
+                        <li><span class="icon web icon-176"></span><span class="text">176</span></li>
+                        <li><span class="icon web icon-177"></span><span class="text">177</span></li>
+                        <li><span class="icon web icon-178"></span><span class="text">178</span></li>
+                        <li><span class="icon web icon-179"></span><span class="text">179</span></li>
+                        <li><span class="icon web icon-180"></span><span class="text">180</span></li>
+                        <li><span class="icon web icon-181"></span><span class="text">181</span></li>
+                        <li><span class="icon web icon-182"></span><span class="text">182</span></li>
+                        <li><span class="icon web icon-183"></span><span class="text">183</span></li>
+                        <li><span class="icon web icon-184"></span><span class="text">184</span></li>
+                        <li><span class="icon web icon-185"></span><span class="text">185</span></li>
+                        <li><span class="icon web icon-186"></span><span class="text">186</span></li>
+                        <li><span class="icon web icon-187"></span><span class="text">187</span></li>
+                        <li><span class="icon web icon-188"></span><span class="text">188</span></li>
+                        <li><span class="icon web icon-189"></span><span class="text">189</span></li>
+                        <li><span class="icon web icon-190"></span><span class="text">190</span></li>
+                        <li><span class="icon web icon-191"></span><span class="text">191</span></li>
+                        <li><span class="icon web icon-192"></span><span class="text">192</span></li>
+                        <li><span class="icon web icon-193"></span><span class="text">193</span></li>
+                        <li><span class="icon web icon-194"></span><span class="text">194</span></li>
+                        <li><span class="icon web icon-195"></span><span class="text">195</span></li>
+                        <li><span class="icon web icon-196"></span><span class="text">196</span></li>
+                        <li><span class="icon web icon-197"></span><span class="text">197</span></li>
+                        <li><span class="icon web icon-198"></span><span class="text">198</span></li>
+                        <li><span class="icon web icon-199"></span><span class="text">199</span></li>			
+                        <li><span class="icon web icon-200"></span><span class="text">200</span></li>
+                        <li><span class="icon web icon-201"></span><span class="text">201</span></li>
+                        <li><span class="icon web icon-202"></span><span class="text">202</span></li>
+                        <li><span class="icon web icon-203"></span><span class="text">203</span></li>
+                        <li><span class="icon web icon-204"></span><span class="text">204</span></li>
+                        <li><span class="icon web icon-205"></span><span class="text">205</span></li>
+                        <li><span class="icon web icon-206"></span><span class="text">206</span></li>
+                        <li><span class="icon web icon-207"></span><span class="text">207</span></li>
+                        <li><span class="icon web icon-208"></span><span class="text">208</span></li>
+                        <li><span class="icon web icon-209"></span><span class="text">209</span></li>
+                        <li><span class="icon web icon-210"></span><span class="text">210</span></li>
+                        <li><span class="icon web icon-211"></span><span class="text">211</span></li>
+                        <li><span class="icon web icon-212"></span><span class="text">212</span></li>
+                        <li><span class="icon web icon-213"></span><span class="text">213</span></li>
+                        <li><span class="icon web icon-214"></span><span class="text">214</span></li>
+                        <li><span class="icon web icon-215"></span><span class="text">215</span></li>
+                        <li><span class="icon web icon-216"></span><span class="text">216</span></li>
+                        <li><span class="icon web icon-217"></span><span class="text">217</span></li>
+                        <li><span class="icon web icon-218"></span><span class="text">218</span></li>
+                        <li><span class="icon web icon-219"></span><span class="text">219</span></li>
+                        <li><span class="icon web icon-220"></span><span class="text">220</span></li>
+                        <li><span class="icon web icon-221"></span><span class="text">221</span></li>
+                        <li><span class="icon web icon-222"></span><span class="text">222</span></li>
+                        <li><span class="icon web icon-223"></span><span class="text">223</span></li>
+                        <li><span class="icon web icon-224"></span><span class="text">224</span></li>
+                        <li><span class="icon web icon-225"></span><span class="text">225</span></li>
+                        <li><span class="icon web icon-226"></span><span class="text">226</span></li>
+                        <li><span class="icon web icon-227"></span><span class="text">227</span></li>
+                        <li><span class="icon web icon-228"></span><span class="text">228</span></li>
+                        <li><span class="icon web icon-229"></span><span class="text">229</span></li>
+                        <li><span class="icon web icon-230"></span><span class="text">230</span></li>
+                        <li><span class="icon web icon-231"></span><span class="text">231</span></li>
+                        <li><span class="icon web icon-232"></span><span class="text">232</span></li>
+                        <li><span class="icon web icon-233"></span><span class="text">233</span></li>
+                        <li><span class="icon web icon-234"></span><span class="text">234</span></li>
+                        <li><span class="icon web icon-235"></span><span class="text">235</span></li>
+                        <li><span class="icon web icon-236"></span><span class="text">236</span></li>
+                        <li><span class="icon web icon-237"></span><span class="text">237</span></li>
+                        <li><span class="icon web icon-238"></span><span class="text">238</span></li>
+                        <li><span class="icon web icon-239"></span><span class="text">239</span></li>
+                        <li><span class="icon web icon-240"></span><span class="text">240</span></li>
+                        <li><span class="icon web icon-241"></span><span class="text">241</span></li>
+                        <li><span class="icon web icon-242"></span><span class="text">242</span></li>
+                        <li><span class="icon web icon-243"></span><span class="text">243</span></li>
+                        <li><span class="icon web icon-244"></span><span class="text">244</span></li>
+                        <li><span class="icon web icon-245"></span><span class="text">245</span></li>
+                        <li><span class="icon web icon-246"></span><span class="text">246</span></li>
+                        <li><span class="icon web icon-247"></span><span class="text">247</span></li>
+                        <li><span class="icon web icon-248"></span><span class="text">248</span></li>
+                        <li><span class="icon web icon-249"></span><span class="text">249</span></li>
+                        <li><span class="icon web icon-250"></span><span class="text">250</span></li>
+                        <li><span class="icon web icon-251"></span><span class="text">251</span></li>
+                        <li><span class="icon web icon-252"></span><span class="text">252</span></li>
+                        <li><span class="icon web icon-253"></span><span class="text">253</span></li>
+                        <li><span class="icon web icon-254"></span><span class="text">254</span></li>
+                        <li><span class="icon web icon-255"></span><span class="text">255</span></li>
+                        <li><span class="icon web icon-256"></span><span class="text">256</span></li>
+                        <li><span class="icon web icon-257"></span><span class="text">257</span></li>
+                        <li><span class="icon web icon-258"></span><span class="text">258</span></li>
+                        <li><span class="icon web icon-259"></span><span class="text">259</span></li>
+                        <li><span class="icon web icon-260"></span><span class="text">260</span></li>
+                        <li><span class="icon web icon-261"></span><span class="text">261</span></li>
+                        <li><span class="icon web icon-262"></span><span class="text">262</span></li>
+                        <li><span class="icon web icon-263"></span><span class="text">263</span></li>
+                        <li><span class="icon web icon-264"></span><span class="text">264</span></li>
+                        <li><span class="icon web icon-265"></span><span class="text">265</span></li>
+                        <li><span class="icon web icon-266"></span><span class="text">266</span></li>
+                        <li><span class="icon web icon-267"></span><span class="text">267</span></li>
+                        <li><span class="icon web icon-268"></span><span class="text">268</span></li>
+                        <li><span class="icon web icon-269"></span><span class="text">269</span></li>
+                        <li><span class="icon web icon-270"></span><span class="text">270</span></li>
+                        <li><span class="icon web icon-271"></span><span class="text">271</span></li>
+                        <li><span class="icon web icon-272"></span><span class="text">272</span></li>
+                        <li><span class="icon web icon-273"></span><span class="text">273</span></li>
+                        <li><span class="icon web icon-274"></span><span class="text">274</span></li>
+                        <li><span class="icon web icon-275"></span><span class="text">275</span></li>
+                        <li><span class="icon web icon-276"></span><span class="text">276</span></li>
+                        <li><span class="icon web icon-277"></span><span class="text">277</span></li>
+                        <li><span class="icon web icon-278"></span><span class="text">278</span></li>
+                        <li><span class="icon web icon-279"></span><span class="text">279</span></li>
+                        <li><span class="icon web icon-280"></span><span class="text">280</span></li>
+                        <li><span class="icon web icon-281"></span><span class="text">281</span></li>
+                        <li><span class="icon web icon-282"></span><span class="text">282</span></li>
+                        <li><span class="icon web icon-283"></span><span class="text">283</span></li>
+                        <li><span class="icon web icon-284"></span><span class="text">284</span></li>
+                        <li><span class="icon web icon-285"></span><span class="text">285</span></li>
+                        <li><span class="icon web icon-286"></span><span class="text">286</span></li>
+                        <li><span class="icon web icon-287"></span><span class="text">287</span></li>
+                        <li><span class="icon web icon-288"></span><span class="text">288</span></li>
+                        <li><span class="icon web icon-289"></span><span class="text">289</span></li>
+                        <li><span class="icon web icon-290"></span><span class="text">290</span></li>
+                        <li><span class="icon web icon-291"></span><span class="text">291</span></li>
+                        <li><span class="icon web icon-292"></span><span class="text">292</span></li>
+                        <li><span class="icon web icon-293"></span><span class="text">293</span></li>
+                        <li><span class="icon web icon-294"></span><span class="text">294</span></li>
+                        <li><span class="icon web icon-295"></span><span class="text">295</span></li>
+                        <li><span class="icon web icon-296"></span><span class="text">296</span></li>
+                        <li><span class="icon web icon-297"></span><span class="text">297</span></li>
+                        <li><span class="icon web icon-298"></span><span class="text">298</span></li>
+                        <li><span class="icon web icon-299"></span><span class="text">299</span></li>
+                        <li><span class="icon web icon-300"></span><span class="text">300</span></li>
+                        <li><span class="icon web icon-301"></span><span class="text">301</span></li>
+                        <li><span class="icon web icon-302"></span><span class="text">302</span></li>
+                        <li><span class="icon web icon-303"></span><span class="text">303</span></li>
+                        <li><span class="icon web icon-304"></span><span class="text">304</span></li>
+                        <li><span class="icon web icon-305"></span><span class="text">305</span></li>
+                        <li><span class="icon web icon-306"></span><span class="text">306</span></li>
+                        <li><span class="icon web icon-307"></span><span class="text">307</span></li>
+                        <li><span class="icon web icon-308"></span><span class="text">308</span></li>
+                        <li><span class="icon web icon-309"></span><span class="text">309</span></li>
+                        <li><span class="icon web icon-310"></span><span class="text">310</span></li>
+                        <li><span class="icon web icon-311"></span><span class="text">311</span></li>
+                        <li><span class="icon web icon-312"></span><span class="text">312</span></li>
+                        <li><span class="icon web icon-313"></span><span class="text">313</span></li>
+                        <li><span class="icon web icon-314"></span><span class="text">314</span></li>
+                        <li><span class="icon web icon-315"></span><span class="text">315</span></li>
+                        <li><span class="icon web icon-316"></span><span class="text">316</span></li>
+                        <li><span class="icon web icon-317"></span><span class="text">317</span></li>
+                        <li><span class="icon web icon-318"></span><span class="text">318</span></li>
+                        <li><span class="icon web icon-319"></span><span class="text">319</span></li>
+                        <li><span class="icon web icon-320"></span><span class="text">320</span></li>
+                        <li><span class="icon web icon-321"></span><span class="text">321</span></li>
+                        <li><span class="icon web icon-322"></span><span class="text">322</span></li>
+                        <li><span class="icon web icon-323"></span><span class="text">323</span></li>
+                        <li><span class="icon web icon-324"></span><span class="text">324</span></li>
+                        <li><span class="icon web icon-325"></span><span class="text">325</span></li>
+                        <li><span class="icon web icon-326"></span><span class="text">326</span></li>
+                        <li><span class="icon web icon-327"></span><span class="text">327</span></li>
+                        <li><span class="icon web icon-328"></span><span class="text">328</span></li>
+                        <li><span class="icon web icon-329"></span><span class="text">329</span></li>
+                        <li><span class="icon web icon-330"></span><span class="text">330</span></li>
+                        <li><span class="icon web icon-331"></span><span class="text">331</span></li>
+                        <li><span class="icon web icon-332"></span><span class="text">332</span></li>
+                        <li><span class="icon web icon-333"></span><span class="text">333</span></li>
+                        <li><span class="icon web icon-334"></span><span class="text">334</span></li>
+                        <li><span class="icon web icon-335"></span><span class="text">335</span></li>
+                        <li><span class="icon web icon-336"></span><span class="text">336</span></li>
+                        <li><span class="icon web icon-337"></span><span class="text">337</span></li>
+                        <li><span class="icon web icon-338"></span><span class="text">338</span></li>
+                        <li><span class="icon web icon-339"></span><span class="text">339</span></li>
+                        <li><span class="icon web icon-340"></span><span class="text">340</span></li>
+                        <li><span class="icon web icon-341"></span><span class="text">341</span></li>
+                        <li><span class="icon web icon-342"></span><span class="text">342</span></li>
+                        <li><span class="icon web icon-343"></span><span class="text">343</span></li>
+                        <li><span class="icon web icon-344"></span><span class="text">344</span></li>
+                        <li><span class="icon web icon-345"></span><span class="text">345</span></li>
+                        <li><span class="icon web icon-346"></span><span class="text">346</span></li>
+                        <li><span class="icon web icon-347"></span><span class="text">347</span></li>
+                        <li><span class="icon web icon-348"></span><span class="text">348</span></li>
+                        <li><span class="icon web icon-349"></span><span class="text">349</span></li>
+                        <li><span class="icon web icon-350"></span><span class="text">350</span></li>
+                    </ul>
+                    <br class="clear" />
+                    
+                    <h5>Social Icons</h5>
+                    <ul class="icons">
+                        <li><span class="icon social social-icon-aim"></span><span class="text">aim</span></li>
+                        <li><span class="icon social social-icon-aim-alt"></span><span class="text">aim-alt</span></li>
+                        <li><span class="icon social social-icon-amazon"></span><span class="text">amazon</span></li>
+                        <li><span class="icon social social-icon-app-store"></span><span class="text">app-store</span></li>
+                        <li><span class="icon social social-icon-apple"></span><span class="text">apple</span></li>
+                        <li><span class="icon social social-icon-arto"></span><span class="text">arto</span></li>
+                        <li><span class="icon social social-icon-aws"></span><span class="text">aws</span></li>
+                        <li><span class="icon social social-icon-baidu"></span><span class="text">baidu</span></li>
+                        <li><span class="icon social social-icon-basecamp"></span><span class="text">basecamp</span></li>
+                        <li><span class="icon social social-icon-bebo"></span><span class="text">bebo</span></li>
+                        <li><span class="icon social social-icon-behance"></span><span class="text">behance</span></li>
+                        <li><span class="icon social social-icon-bing"></span><span class="text">bing</span></li>
+                        <li><span class="icon social social-icon-blip"></span><span class="text">blip</span></li>
+                        <li><span class="icon social social-icon-blogger"></span><span class="text">blogger</span></li>
+                        <li><span class="icon social social-icon-bnter"></span><span class="text">bnter</span></li>
+                        <li><span class="icon social social-icon-brightkite"></span><span class="text">brightkite</span></li>
+                        <li><span class="icon social social-icon-cinch"></span><span class="text">cinch</span></li>
+                        <li><span class="icon social social-icon-cloudapp"></span><span class="text">cloudapp</span></li>
+                        <li><span class="icon social social-icon-coroflot"></span><span class="text">coroflot</span></li>
+                        <li><span class="icon social social-icon-creative-commons"></span><span class="text">creative-commons</span></li>
+                        <li><span class="icon social social-icon-dailybooth"></span><span class="text">dailybooth</span></li>
+                        <li><span class="icon social social-icon-delicious"></span><span class="text">delicious</span></li>
+                        <li><span class="icon social social-icon-designbump"></span><span class="text">designbump</span></li>
+                        <li><span class="icon social social-icon-designfloat"></span><span class="text">designfloat</span></li>
+                        <li><span class="icon social social-icon-designmoo"></span><span class="text">designmoo</span></li>
+                        <li><span class="icon social social-icon-deviantart"></span><span class="text">deviantart</span></li>
+                        <li><span class="icon social social-icon-digg"></span><span class="text">digg</span></li>
+                        <li><span class="icon social social-icon-digg-alt"></span><span class="text">digg-alt</span></li>
+                        <li><span class="icon social social-icon-diigo"></span><span class="text">diigo</span></li>
+                        <li><span class="icon social social-icon-dribbble"></span><span class="text">dribbble</span></li>
+                        <li><span class="icon social social-icon-dropbox"></span><span class="text">dropbox</span></li>
+                        <li><span class="icon social social-icon-drupal"></span><span class="text">drupal</span></li>
+                        <li><span class="icon social social-icon-dzone"></span><span class="text">dzone</span></li>
+                        <li><span class="icon social social-icon-ebay"></span><span class="text">ebay</span></li>
+                        <li><span class="icon social social-icon-ember"></span><span class="text">ember</span></li>
+                        <li><span class="icon social social-icon-etsy"></span><span class="text">etsy</span></li>
+                        <li><span class="icon social social-icon-evernote"></span><span class="text">evernote</span></li>
+                        <li><span class="icon social social-icon-facebook"></span><span class="text">facebook</span></li>
+                        <li><span class="icon social social-icon-facebook-alt"></span><span class="text">facebook-alt</span></li>
+                        <li><span class="icon social social-icon-facebook-places"></span><span class="text">facebook-places</span></li>
+                        <li><span class="icon social social-icon-factome"></span><span class="text">factome</span></li>
+                        <li><span class="icon social social-icon-feedburner"></span><span class="text">feedburner</span></li>
+                        <li><span class="icon social social-icon-flickr"></span><span class="text">flickr</span></li>
+                        <li><span class="icon social social-icon-folkd"></span><span class="text">folkd</span></li>
+                        <li><span class="icon social social-icon-formspring"></span><span class="text">formspring</span></li>
+                        <li><span class="icon social social-icon-forrst"></span><span class="text">forrst</span></li>
+                        <li><span class="icon social social-icon-foursquare"></span><span class="text">foursquare</span></li>
+                        <li><span class="icon social social-icon-friendfeed"></span><span class="text">friendfeed</span></li>
+                        <li><span class="icon social social-icon-friendster"></span><span class="text">friendster</span></li>
+                        <li><span class="icon social social-icon-gdgt"></span><span class="text">gdgt</span></li>
+                        <li><span class="icon social social-icon-github"></span><span class="text">github</span></li>
+                        <li><span class="icon social social-icon-github-alt"></span><span class="text">github-alt</span></li>
+                        <li><span class="icon social social-icon-goodreads"></span><span class="text">goodreads</span></li>
+                        <li><span class="icon social social-icon-google"></span><span class="text">google</span></li>
+                        <li><span class="icon social social-icon-google-buzz"></span><span class="text">google-buzz</span></li>
+                        <li><span class="icon social social-icon-google-talk"></span><span class="text">google-talk</span></li>
+                        <li><span class="icon social social-icon-gowalla"></span><span class="text">gowalla</span></li>
+                        <li><span class="icon social social-icon-gowalla-alt"></span><span class="text">gowalla-alt</span></li>
+                        <li><span class="icon social social-icon-grooveshark"></span><span class="text">grooveshark</span></li>
+                        <li><span class="icon social social-icon-hacker-news"></span><span class="text">hacker-news</span></li>
+                        <li><span class="icon social social-icon-hi5"></span><span class="text">hi5</span></li>
+                        <li><span class="icon social social-icon-hype-machine"></span><span class="text">hype-machine</span></li>
+                        <li><span class="icon social social-icon-hyves"></span><span class="text">hyves</span></li>
+                        <li><span class="icon social social-icon-icq"></span><span class="text">icq</span></li>
+                        <li><span class="icon social social-icon-identica"></span><span class="text">identica</span></li>
+                        <li><span class="icon social social-icon-instapaper"></span><span class="text">instapaper</span></li>
+                        <li><span class="icon social social-icon-itunes"></span><span class="text">itunes</span></li>
+                        <li><span class="icon social social-icon-kik"></span><span class="text">kik</span></li>
+                        <li><span class="icon social social-icon-krop"></span><span class="text">krop</span></li>
+                        <li><span class="icon social social-icon-lastfm"></span><span class="text">lastfm</span></li>
+                        <li><span class="icon social social-icon-linkedin"></span><span class="text">linkedin</span></li>
+                        <li><span class="icon social social-icon-linkedin-alt"></span><span class="text">linkedin-alt</span></li>
+                        <li><span class="icon social social-icon-livejournal"></span><span class="text">livejournal</span></li>
+                        <li><span class="icon social social-icon-lovedsgn"></span><span class="text">lovedsgn</span></li>
+                        <li><span class="icon social social-icon-meetup"></span><span class="text">meetup</span></li>
+                        <li><span class="icon social social-icon-metacafe"></span><span class="text">metacafe</span></li>
+                        <li><span class="icon social social-icon-ming"></span><span class="text">ming</span></li>
+                        <li><span class="icon social social-icon-mister-wong"></span><span class="text">mister-wong</span></li>
+                        <li><span class="icon social social-icon-mixx"></span><span class="text">mixx</span></li>
+                        <li><span class="icon social social-icon-mixx-alt"></span><span class="text">mixx-alt</span></li>
+                        <li><span class="icon social social-icon-mobileme"></span><span class="text">mobileme</span></li>
+                        <li><span class="icon social social-icon-msn-messenger"></span><span class="text">msn-messenger</span></li>
+                        <li><span class="icon social social-icon-myspace"></span><span class="text">myspace</span></li>
+                        <li><span class="icon social social-icon-myspace-alt"></span><span class="text">myspace-alt</span></li>
+                        <li><span class="icon social social-icon-newsvine"></span><span class="text">newsvine</span></li>
+                        <li><span class="icon social social-icon-officialfm"></span><span class="text">officialfm</span></li>
+                        <li><span class="icon social social-icon-openid"></span><span class="text">openid</span></li>
+                        <li><span class="icon social social-icon-orkut"></span><span class="text">orkut</span></li>
+                        <li><span class="icon social social-icon-pandora"></span><span class="text">pandora</span></li>
+                        <li><span class="icon social social-icon-path"></span><span class="text">path</span></li>
+                        <li><span class="icon social social-icon-paypal"></span><span class="text">paypal</span></li>
+                        <li><span class="icon social social-icon-photobucket"></span><span class="text">photobucket</span></li>
+                        <li><span class="icon social social-icon-picasa"></span><span class="text">picasa</span></li>
+                        <li><span class="icon social social-icon-pinboardin"></span><span class="text">pinboardin</span></li>
+                        <li><span class="icon social social-icon-ping"></span><span class="text">ping</span></li>
+                        <li><span class="icon social social-icon-pingchat"></span><span class="text">pingchat</span></li>
+                        <li><span class="icon social social-icon-playstation"></span><span class="text">playstation</span></li>
+                        <li><span class="icon social social-icon-plixi"></span><span class="text">plixi</span></li>
+                        <li><span class="icon social social-icon-plurk"></span><span class="text">plurk</span></li>
+                        <li><span class="icon social social-icon-podcast"></span><span class="text">podcast</span></li>
+                        <li><span class="icon social social-icon-posterous"></span><span class="text">posterous</span></li>
+                        <li><span class="icon social social-icon-qik"></span><span class="text">qik</span></li>
+                        <li><span class="icon social social-icon-quik"></span><span class="text">quik</span></li>
+                        <li><span class="icon social social-icon-quora"></span><span class="text">quora</span></li>
+                        <li><span class="icon social social-icon-rdio"></span><span class="text">rdio</span></li>
+                        <li><span class="icon social social-icon-readernaut"></span><span class="text">readernaut</span></li>
+                        <li><span class="icon social social-icon-reddit"></span><span class="text">reddit</span></li>
+                        <li><span class="icon social social-icon-retweet"></span><span class="text">retweet</span></li>
+                        <li><span class="icon social social-icon-roboto"></span><span class="text">roboto</span></li>
+                        <li><span class="icon social social-icon-rss"></span><span class="text">rss</span></li>
+                        <li><span class="icon social social-icon-scribd"></span><span class="text">scribd</span></li>
+                        <li><span class="icon social social-icon-sharethis"></span><span class="text">sharethis</span></li>
+                        <li><span class="icon social social-icon-simplenote"></span><span class="text">simplenote</span></li>
+                        <li><span class="icon social social-icon-skype"></span><span class="text">skype</span></li>
+                        <li><span class="icon social social-icon-slashdot"></span><span class="text">slashdot</span></li>
+                        <li><span class="icon social social-icon-slideshare"></span><span class="text">slideshare</span></li>
+                        <li><span class="icon social social-icon-smugmug"></span><span class="text">smugmug</span></li>
+                        <li><span class="icon social social-icon-soundcloud"></span><span class="text">soundcloud</span></li>
+                        <li><span class="icon social social-icon-spotify"></span><span class="text">spotify</span></li>
+                        <li><span class="icon social social-icon-squarespace"></span><span class="text">squarespace</span></li>
+                        <li><span class="icon social social-icon-squidoo"></span><span class="text">squidoo</span></li>
+                        <li><span class="icon social social-icon-steam"></span><span class="text">steam</span></li>
+                        <li><span class="icon social social-icon-stumbleupon"></span><span class="text">stumbleupon</span></li>
+                        <li><span class="icon social social-icon-technorati"></span><span class="text">technorati</span></li>
+                        <li><span class="icon social social-icon-threewordsme"></span><span class="text">threewordsme</span></li>
+                        <li><span class="icon social social-icon-tribenet"></span><span class="text">tribenet</span></li>
+                        <li><span class="icon social social-icon-tripit"></span><span class="text">tripit</span></li>
+                        <li><span class="icon social social-icon-tumblr"></span><span class="text">tumblr</span></li>
+                        <li><span class="icon social social-icon-twitter"></span><span class="text">twitter</span></li>
+                        <li><span class="icon social social-icon-twitter-alt"></span><span class="text">twitter-alt</span></li>
+                        <li><span class="icon social social-icon-vcard"></span><span class="text">vcard</span></li>
+                        <li><span class="icon social social-icon-viddler"></span><span class="text">viddler</span></li>
+                        <li><span class="icon social social-icon-vimeo"></span><span class="text">vimeo</span></li>
+                        <li><span class="icon social social-icon-virb"></span><span class="text">virb</span></li>
+                        <li><span class="icon social social-icon-w3"></span><span class="text">w3</span></li>
+                        <li><span class="icon social social-icon-whatsapp"></span><span class="text">whatsapp</span></li>
+                        <li><span class="icon social social-icon-wikipedia"></span><span class="text">wikipedia</span></li>
+                        <li><span class="icon social social-icon-windows"></span><span class="text">windows</span></li>
+                        <li><span class="icon social social-icon-wists"></span><span class="text">wists</span></li>
+                        <li><span class="icon social social-icon-wordpress"></span><span class="text">wordpress</span></li>
+                        <li><span class="icon social social-icon-wordpress-alt"></span><span class="text">wordpress-alt</span></li>
+                        <li><span class="icon social social-icon-xing"></span><span class="text">xing</span></li>
+                        <li><span class="icon social social-icon-yahoo"></span><span class="text">yahoo</span></li>
+                        <li><span class="icon social social-icon-yahoo-buzz"></span><span class="text">yahoo-buzz</span></li>
+                        <li><span class="icon social social-icon-yahoo-messenger"></span><span class="text">yahoo-messenger</span></li>
+                        <li><span class="icon social social-icon-yelp"></span><span class="text">yelp</span></li>
+                        <li><span class="icon social social-icon-youtube"></span><span class="text">youtube</span></li>
+                        <li><span class="icon social social-icon-youtube-alt"></span><span class="text">youtube-alt</span></li>
+                        <li><span class="icon social social-icon-zerply"></span><span class="text">zerply</span></li>
+                        <li><span class="icon social social-icon-zootool"></span><span class="text">zootool</span></li>
+                        <li><span class="icon social social-icon-zynga"></span><span class="text">zynga</span></li>
+                    </ul>
+                    <br class="clear" />
+                </section>
+                
+                <section id="licences-credits">
+                    <h2>Licences & Credits</h2>
+                    
+                    <ul class="assets">
+                        <li>
+                            <h5>Background Patterns</h5>
+                            <strong>Link:</strong> <a href="http://www.premiumpixels.com/freebies/11-light-subtle-patterns-pat/" target="_blank">www.premiumpixels.com/freebies/11-light-subtle-patterns-pat/</a><br />
+                            <strong>Author:</strong> <a href="http://www.premiumpixels.com/" target="_blank">PremiumPixels</a><br />
+                            <strong>Licence:</strong><br />
+                            <div class="text">
+                                ------------------------------------------------------------<br />
+                                This resource has been created by Orman Clark for PremiumPixels.com<br />
+                                ------------------------------------------------------------
+                                <br /><br />
+                                TERMS OF USE:
+                                <br /><br />
+                                All resources made available on Premium Pixels, including but not limited to, icons, images, brushes, shapes, layer styles, layered PSD’s, patterns, textures, web elements and themes are free for use in both personal and commercial projects.
+                                <br /><br />
+                                You may freely use our resources, without restriction, in software programs, web templates and other materials intended for sale or distribution. No attribution or backlinks are required, but any form of spreading the word is always appreciated!
+                                <br /><br />
+                                You are not permitted to make the resources found on Premium Pixels available for distribution elsewhere “as is” without prior consent.
+                                <br /><br />
+                                <br /><br />
+                                Orman Clark for PremiumPixels.com<br />
+                                _________________________<br />
+                                www.premiumpixels.com<br />
+                                www.ormanclark.com
+                            </div>
+                        </li>
+                        <li>
+                            <h5>Color Picker (jQuery Plugin)</h5>
+                            <strong>Link:</strong> <a href="http://www.eyecon.ro/colorpicker/" target="_blank">www.eyecon.ro/colorpicker</a><br />
+                            <strong>Author:</strong> <a href="http://www.eyecon.ro/" target="_blank">Stefan Petre</a><br />
+                            <strong>Licence:</strong> Dual licensed under the MIT and GPL licenses.
+                        </li>
+                        <li>
+                            <h5>Fonts</h5>
+                            <strong>Anonymous Pro</strong>, <strong>Economica</strong>, <strong>Nothing You Could Do</strong>, <strong>PT Sans</strong>, <strong>PT Sans Narrow</strong>, <strong>Source Sans Pro</strong><br />
+                            <strong>Link:</strong> <a href="http://www.google.com/fonts/" target="_blank">Google Fonts</a><br />
+                            <strong>Licence:</strong> All the fonts on Google Fonts are licensed under open source licenses that let you use them on any website, from a private blog to a big commercial site.
+                        </li>
+                        <li>
+                            <h5>Images</h5>
+                            <div class="text">
+                                1. http://www.flickr.com/photos/25028863@N00/6061514580/ by Stefano Kloo<br />
+                                2. http://www.flickr.com/photos/41455403@N00/317310662/ by Gilles Klein - Boxeur<br />
+                                3.http://www.flickr.com/photos/25028863@N00/4896197227/ by Stefan Kloo<br />
+                                4. http://www.flickr.com/photos/14111752@N07/4924137407/ by Cornelia Kopp<br />
+                                5. http://www.flickr.com/photos/25028863@N00/4453785020/ by Stefan Kloo
+                                6. http://www.flickr.com/photos/46944516@N00/6591065645/ by Pedro Ribeiro Simones<br />
+                                7. http://www.flickr.com/photos/25028863@N00/4580066685/ by Stefan Kloo<br />
+                                8. http://www.flickr.com/photos/56176610@N00/2468293717/ by Leeky-Boy<br />
+                                9. http://www.flickr.com/photos/20194040@N00/5072051319/ by Paul Nine-o<br />
+                                10. http://www.flickr.com/photos/41455403@N00/4522044328/ by Gilles Klein<br />
+                                11. http://www.flickr.com/photos/25028863@N00/6350077776/  by Stefan Kloo<br />
+                                12. http://www.flickr.com/photos/25028863@N00/4533324399/ by Stefan Kloo<br />
+                                13. http://www.flickr.com/photos/41455403@N00/138321989/ by gilles Klein<br />
+                                14. http://www.flickr.com/photos/25028863@N00/6274912335/ by Stefan Kloo<br />
+                                15. http://www.flickr.com/photos/78425154@N00/182476841/ by Franco Folini<br />
+                                16. http://www.flickr.com/photos/25028863@N00/5650232405/ by Stefan Kloo<br />
+                                17. http://www.flickr.com/photos/62518311@N00/4898746526/ by Daniel Lobo<br />
+                                18. http://www.flickr.com/photos/10652225@N00/4796619865/ by Enric Archivell<br />
+                                19. http://www.flickr.com/photos/10295270@N05/6626209577/ by Erokism<br />
+                                20. http://www.flickr.com/photos/53098051@N02/7291099874/  by Cedward Brice<br />
+                                21. http://www.flickr.com/photos/25028863@N00/4888609685/ by Stefan Kloo<br />
+                                <br /><br />
+                                Pic 01 - http://www.flickr.com/photos/67162861@N00/351521714/ by Fabiana<br />
+                                Pic 02 - http://www.flickr.com/photos/30463609@N00/500166921/ by Stephanie Carter<br />
+                                Pic 04 - http://www.flickr.com/photos/44124425616@N01/590034637/ byHamed Saber<br />
+                                Pic 05 - http://www.flickr.com/photos/44124425616@N01/1388036640/ by Hamed Saber<br />
+                                Pic 06 - http://www.flickr.com/photos/40645538@N00/1638699646/ - by Sharon Pruitt<br />
+                                Pic 07 - http://www.flickr.com/photos/7487149@N03/1730650717/ by Sukanto Debnath<br />
+                                Pic 08 - http://www.flickr.com/photos/51035655291@N01/2922275111/ by Ricardo Liberato<br />
+                                Pic 09 - http://www.flickr.com/photos/21976354@N07/3121675293/ by Neils Photograhpy<br />
+                                Pic 12 - http://www.flickr.com/photos/21251150@N04/4073581804/ by Angelo Gonzales<br />
+                                Pic 13 - http://www.flickr.com/photos/21251150@N04/4479277174/ by Angelo Gonzales<br />
+                                Pic 18 - http://www.flickr.com/photos/54657246@N02/6227418584/ by Stf. O<br />
+                                Pic 19 - http://www.flickr.com/photos/64742456@N00/6678553853/ by Daniel Zedda<br />
+                                Pic 20 - http://www.flickr.com/photos/7941044@N06/6777002055/ by Jenny Downing<br />
+                                Pic 25 - http://www.flickr.com/photos/21976354@N07/3122503414/ by Neils Photography<br />
+                                Pic 27 - http://www.flickr.com/photos/15082599@N08/2638619610/ by Alexander Stubner<br />
+                                Pic 28 - http://www.flickr.com/photos/13997606@N03/3001597218/ by Pierre Vignau<br />
+                                Pic 29 - http://www.flickr.com/photos/38417180@N00/4535491081/ by Aaron Kawai<br />
+                                Pic 30 - http://www.flickr.com/photos/59852454@N03/8179954008/ by Pavel P. <br />
+                                Pic 31 - http://www.flickr.com/photos/30330906@N04/7712461620/ by Francisco Osorio<br />
+                                Pic 32 - http://www.flickr.com/photos/23566085@N00/277485584/ by Eddy Van 3000<br />
+                            </div>
+                        </li>
+                        <li>
+                            <h5>Image Loader (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 1.3<br />
+                            <strong>Link:</strong> <a href="http://codecanyon.net/item/image-loader-jquery-plugin/238077?ref=DOTonPAPER" target="_blank">CodeCanyon</a><br />
+                            <strong>Author:</strong> <a href="http://www.dotonpaper.net/" target="_blank">Dot on Paper</a><br />
+                            <strong>Licence:</strong> <a href="http://themeforest.net/licenses" target="_blank">Envato Licences</a>.
+                        </li>
+                        <li>
+                            <h5>jQuery Countdown</h5>
+                            <strong>Version:</strong> 1.2.1<br />
+                            <strong>Link:</strong> <a href="http://keith-wood.name/countdown.html" target="_blank">http://keith-wood.name/countdown.html</a><br />
+                            <strong>Author:</strong> <a href="http://keith-wood.name" target="_blank">Keith Wood</a><br />
+                            <strong>Licence:</strong> Available under the MIT license. 
+                        </li>
+                        <li>
+                            <h5>jScrollPane (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 2.0<br />
+                            <strong>Link:</strong> <a href="http://jscrollpane.kelvinluck.com/" target="_blank">jscrollpane.kelvinluck.com</a><br />
+                            <strong>Author:</strong> <a href="http://www.kelvinluck.com/" target="_blank">Kelvin Luck</a><br />
+                            <strong>Licence:</strong> Dual licensed under the MIT and GPL licenses.
+                        </li>
+                        <li>
+                            <h5>Mousewheel (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 3.0.6<br />
+                            <strong>Link:</strong> <a href="http://brandonaaron.net/code/mousewheel/docs" target="_blank">www.brandonaaron.net/code/mousewheel/docs</a><br />
+                            <strong>Author:</strong> <a href="http://www.brandonaaron.net/" target="_blank">Brandon Aaron</a><br />
+                            <strong>Licence:</strong> Released under MIT license.
+                        </li>
+                        <li>
+                            <h5>JavaScript 3D library</h5>
+                            <strong>Version:</strong> r28<br />
+                            <strong>Link:</strong> <a href="http://threejs.org/" target="_blank">threejs.org</a><br />
+                            <strong>Author:</strong> <a href="http://www.mrdoob.com/" target="_blank">Mr.doob</a><br />
+                            <strong>Licence:</strong><br />
+                            <div class="text">
+                                The MIT License
+                                <br /><br />
+                                Copyright (c) 2010-2012 three.js authors
+                                <br /><br />
+                                Permission is hereby granted, free of charge, to any person obtaining a copy
+                                of this software and associated documentation files (the "Software"), to deal
+                                in the Software without restriction, including without limitation the rights
+                                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                                copies of the Software, and to permit persons to whom the Software is
+                                furnished to do so, subject to the following conditions:
+                                <br /><br />
+                                The above copyright notice and this permission notice shall be included in
+                                all copies or substantial portions of the Software.
+                                <br /><br />
+                                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                                THE SOFTWARE.
+                            </div>
+                        </li>
+                        <li>
+                            <h5>Thumbnail Gallery (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 1.8<br />
+                            <strong>Link:</strong> <a href="http://codecanyon.net/item/thumbnail-gallery-jquery-plugin/164050?ref=DOTonPAPER" target="_blank">CodeCanyon</a><br />
+                            <strong>Author:</strong> <a href="http://www.dotonpaper.net/" target="_blank">Dot on Paper</a><br />
+                            <strong>Licence:</strong> <a href="http://themeforest.net/licenses" target="_blank">Envato Licences</a>.
+                        </li>
+                        <li>
+                            <h5>Thumbnail Scroller (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 1.6<br />
+                            <strong>Link:</strong> <a href="http://codecanyon.net/item/thumbnail-scroller-jquery-plugin/168867?ref=DOTonPAPER" target="_blank">CodeCanyon</a><br />
+                            <strong>Author:</strong> <a href="http://www.dotonpaper.net/" target="_blank">Dot on Paper</a><br />
+                            <strong>Licence:</strong> <a href="http://themeforest.net/licenses" target="_blank">Envato Licences</a>.
+                        </li>
+                        <li>
+                            <h5>Wall/Grid Gallery (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 1.9<br />
+                            <strong>Link:</strong> <a href="http://codecanyon.net/item/wallgrid-gallery-jquery-plugin/161458?ref=DOTonPAPER" target="_blank">CodeCanyon</a><br />
+                            <strong>Author:</strong> <a href="http://www.dotonpaper.net/" target="_blank">Dot on Paper</a><br />
+                            <strong>Licence:</strong> <a href="http://themeforest.net/licenses" target="_blank">Envato Licences</a>.
+                        </li>
+                    </ul>
+            	</section>
+                
+                <section id="support">
+                    <h2>Support</h2>
+                    <p>
+                    	If you did not find the answer you were looking for in the given documentation, please access our <a href="http://envato-support.dotonpaper.net/" target="_blank">Support Forums</a>. If you cannot find the answer to your issue, post a new topic, describing the problem you are having. Please add in your message a link to where you use the item or any other stuff that might be relevant (don’t include any passwords or any confidential information).
+                    </p>
+                    <p>
+                        <strong>Note:</strong>
+                        <br />
+                        On our <a href="http://envato-support.dotonpaper.net/" target="_blank">Support Forums</a> you need to login and confirm the <strong>Item Purchase Code</strong> for the item you need help with, which you can get it from <em>Envato Marketplace</em> -> <em>Sign In into your Account</em> -> <em>Downloads</em> -> <em>Licence Certificate on the purchased item</em>.
+                    </p>
+                    <p>
+                        <img src="assets/gui/images/purchase-code.png" alt="" />
+                    </p>
+                    <p>
+                        <strong>Work time:</strong>
+                        <br />
+                        07:00 (07:00 AM) – 16:00 (04:00 PM) GMT | Working days only (Monday – Friday)
+                    </p>
+                    <p>
+                        <strong>We do NOT provide support in comments section. Please use it for presale questions only.</strong>
+                    </p>
+                    <h3>Disclaymer</h3>
+                    <p class="disclaymer">
+                        <em>
+                            If you buy an Envato item, according to Envato rules, you are not entitled to support or free customizations.<br />
+                            WE WILL OFFER FREE SUPPORT only for bugs, item related issues and very small modifications(a few minutes of work). Everything else will be considered as custom work, for which we charge $35/hour.<br /> 
+                            Offering support will help us improve and fix the bugs in our products and a great way to do this is to see what problem appear when people use them.<br />
+                            If your request for a feature has been made by other people is it possible, but not a rule, to add that feature in a future update. Please don't buy the item if a feature doesn't exist and you need it. We will not add it for you in record time. If you are not sure if the feature exists please ask first.  
+                        </em>
+                    </p>
+                </section>
+
+                <section>
+                    <p class="info">
+                        <strong>PS: Do not forget to rate this item
+                        &nbsp;<img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />.</strong>
+                    </p>                
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

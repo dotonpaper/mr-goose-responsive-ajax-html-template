@@ -1,0 +1,1111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Wall/Grid Gallery (jQuery Plugin)</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <link rel="stylesheet" type="text/css" href="assets/gui/css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Antic+Didone|Sintony' rel='stylesheet' type='text/css' />
+        <link rel="shortcut icon" href="assets/gui/images/icon.ico" />
+
+        <script type="text/JavaScript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="libraries/js/syntax-highlighter/shCore.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushCss.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushJScript.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushPhp.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushSql.js"></script>
+	<script type="text/javascript" src="libraries/js/syntax-highlighter/shBrushXml.js"></script>
+        <script type="text/Javascript" src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <ul id="menu">
+                    <li>
+                        <a href="#getting-started">Getting Started</a>
+                    </li>
+                    <li>
+                    	<a href="#licence">Licence</a>
+                    </li>
+                    <li>
+                        <a href="#how-to-use-install-it">How to use/install it</a>
+                    </li>
+                    <li>
+                        <a href="#how-to-customize-it">How to customize it</a>
+                    </li>
+                    <li>
+                        <a href="#settings-descriptions">Settings descriptions</a>
+                    </li>
+                    <li>
+                        <a href="#how-to-add-content">How to add content</a>
+                    </li>
+                    <li>
+                        <a href="#content-description">Content description</a>
+                    </li>
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                    	<a href="#how-to-update">How to update</a>
+                    </li>
+                    <li>
+                    	<a href="#changelog">Changelog</a>
+                    </li>
+                    <li>
+                    	<a href="#assets">Assets</a>
+                    </li>
+                    <li>
+                        <a href="#support">Support</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="content">
+            	<h1>
+                  Wall/Grid Gallery<br />
+                  jQuery Plugin
+                </h1>
+                
+                <section id="getting-started">
+                    <h2>Getting Started</h2>
+                    <p>
+                        A very customizable jQuery Plugin, which will allow you to add a grid gallery which can be edited from a HTML, JSON or XML files. The gallery is completely resizable and is compatible with all browsers and devices (compatible with iOS & Android). 
+                    </p>
+                    <p>
+                        If you like this plugin, feel free to rate it five stars
+                        &nbsp;<img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />&nbsp;
+                        at your <a href="http://codecanyon.net/?ref=DOTonPAPER" target="_blank">CodeCanyon</a> account in <strong>Downloads</strong> section.
+                        If you encounter any problems, before rating the item, <a href="http://envato-support.dotonpaper.net/" target="_blank">contact us</a> so we can help you fix them.
+                    </p>
+                </section>
+
+                <section id="licence">
+                    <h2>Licence</h2>
+                    <p>
+                        This item is sold under <a href="http://themeforest.net/licenses" target="_blank">Envato Licences</a>. Please read them and contact <a href="http://support.envato.com/" target="_blank">Envato Support</a> if you have any questions.
+                    </p>
+                </section>
+
+                <section id="how-to-use-install-it">
+                    <h2>How to use/install it</h2>
+                    
+                    <p>
+                        In <strong>sources/index.html</strong> you have an example:
+                        <br /><br />
+                        1. Copy the folder <strong>dopwgg</strong> somewhere on your server (preferably in the same folder as the page you want to add the scroller to).
+                        <br /><br />
+                        2. Add the following <strong>CSS</strong> and <strong>JS</strong> files in the <strong>&lt;head&gt;&lt;/head&gt;</strong> section of your website:
+                        <br /><br />
+                        <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                            <![CDATA[
+                                dopwgg/assets/gui/css/jquery.jscrollpane.css
+                                dopwgg/assets/gui/css/jquery.dop.WallGridGallery.css
+                                http://code.jquery.com/jquery-latest.js
+                                dopwgg/assets/js/jquery.mousewheel.js
+                                dopwgg/assets/js/jquery.jscrollpane.min.js
+                                dopwgg/assets/js/jquery.dop.WallGridGallery.js
+                            ]]>
+                        </script>
+                        <br />
+                        <strong>Note</strong>: The files can be anywhere on your server or web. Just make sure that they are loaded by your web page.
+                        <br /><br />
+                        3. Add the plugin to a container (HTML tag, class or id). 
+                        <br /><br />
+                        Example:
+                        <br /><br />
+                        <script type="syntaxhighlighter" class="brush: js; toolbar: false;">
+                            <![CDATA[
+                                $('#galleryContainer').DOPWallGridGallery();
+                            ]]>
+                        </script>
+                        <br />
+                        You can add the following parameters to the plugin:</br>
+                        &nbsp;&nbsp;&nbsp;<strong>ID</strong> (gallery ID - necessary if you use more then one gallery on page)</br>
+                        &nbsp;&nbsp;&nbsp;<strong>SettingsDataType</strong> (JSON, XML, HTML)</br>
+                        &nbsp;&nbsp;&nbsp;<strong>SettingsFilePath</strong> (path to settings file)<br />
+                        &nbsp;&nbsp;&nbsp;<strong>ContentDataType</strong> (JSON, XML, HTML)</br>
+                        &nbsp;&nbsp;&nbsp;<strong>ContentFilePath</strong> (path to content file) 
+                        <br /><br />
+                        Example:
+                        <br /><br />
+                        <script type="syntaxhighlighter" class="brush: js; toolbar: false;">
+                            <![CDATA[
+                                $('#galleryContainer').DOPWallGridGallery({
+                                    'ID': 2,
+                                    'SettingsDataType': 'XML',
+                                    'SettingsFilePath': 'settings.xml', 
+                                    'ContentDataType': 'XML',
+                                    'ContentFilePath': 'content.xml'
+                                });
+                            ]]>
+                        </script>
+                        <br />
+                        <strong>Note:</strong> If no parameters are given, the default values will be set:
+                        <br /><br />
+                        <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                            <![CDATA[
+                                'ID': 1,
+                                'SettingsDataType': 'JSON'
+                                'SettingsFilePath': 'dopwgg/json/settings.json'
+                                'ContentDataType': 'JSON'
+                                'ContentFilePath': 'dopwgg/json/content.json'
+                            ]]>
+                        </script>
+                    </p>
+                </section>
+                
+                <section id="how-to-customize-it">
+                    <h2>How to customize it</h2>
+                    <p>
+                        You have a JSON example in <strong>dopwgg/json/settings.json</strong> and a XML example in <strong>dopwgg/xml/settings.xml</strong>.
+                        <br /><br />
+                        For HTML you add in the container a list with class <strong>Settings</strong>:
+                        <br /><br />
+                        <script type="syntaxhighlighter" class="brush: xml; toolbar: false;">
+                            <![CDATA[
+                                <ul class=”Settings”></ul>
+                            ]]>
+                        </script>
+                        <br />
+                        View Example 2 for an example.
+                    </p>
+                </section>
+                
+                 <section id="settings-descriptions">
+                    <h2>Settings descriptions</h2>
+                    
+                    <h5>General Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">Width</div>
+                            <div class="info">(value in pixels). Default value: 900. Sets the width of the gallery.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">Height</div>
+                            <div class="info">(value in pixels). Default value: 0. Sets the height of the gallery. If you set the value to 0 all thumbnails are going to be displayed.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">BgColor</div>
+                            <div class="info">(color hex code). Default value: f1f1f1. Sets gallery’s background color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">BgAlpha</div>
+                            <div class="info">(value from 0 to 100). Default value: 100. Sets gallery’s background alpha.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">NoLines</div>
+                            <div class="info">(auto, number). Default value: 3. Sets the number of lines for the grid.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">NoColumns</div>
+                            <div class="info">(auto, number). Default value: 4. Sets the number of columns for the grid.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ImagesOrder</div>
+                            <div class="info">(normal, random). Default value: normal. Sets images’ order.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ResponsiveEnabled</div>
+                            <div class="info">(true, false). Default value: true. Enables responsive layout.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Thumbnails Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">ThumbnailsSpacing</div>
+                            <div class="info">(value in pixels). Default value: 15. Sets the space between thumbnails.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsPaddingTop</div>
+                            <div class="info">(value in pixels). Default value: 0. Sets the top padding for the thumbnails.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsPaddingRight</div>
+                            <div class="info">(value in pixels). Default value: 0. Sets the right padding for the thumbnails.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsPaddingBottom</div>
+                            <div class="info">(value in pixels). Default value: 0. Sets the bottom padding for the thumbnails.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsPaddingLeft</div>
+                            <div class="info">(value in pixels). Default value: 0. Sets the left padding for the thumbnails.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsNavigation</div>
+                            <div class="info">(mouse, scroll). Default value: mouse. Sets how you navigate through the thumbnails.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsScrollScrubColor</div>
+                            <div class="info">(color hex code). Default value: 777777. Sets the scroll scrub color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsScrollBarColor</div>
+                            <div class="info">(color hex code). Default value: e0e0e0. Sets the scroll bar color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailsInfo</div>
+                            <div class="info">(none, tooltip, label). Default value: none. Displays a small info text on the thumbnails, a tooltip or a label on bottom.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Styles & Settings for a Thumbnail</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">ThumbnailLoader</div>
+                            <div class="info">(path to image). Sets the loader for the thumbnails.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailWidth</div>
+                            <div class="info">(the size in pixels). Default value: 200. Sets the width of a thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailHeight</div>
+                            <div class="info">(the size in pixels). Default value: 100. Sets the height of a thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailWidthMobile</div>
+                            <div class="info">(the size in pixels). Default value: 100. Sets the width of a thumbnail on mobile devices.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailHeightMobile</div>
+                            <div class="info">(the size in pixels). Default value: 50. Sets the height of a thumbnail on mobile devices.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailAlpha</div>
+                            <div class="info">(value from 0 to 100). Default value: 80. Sets the transparency of a thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailAlphaHover</div>
+                            <div class="info">(value from 0 to 100). Default value: 100. Sets the transparency of a thumbnail when hover.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailBgColor</div>
+                            <div class="info">(color hex code). Default value: cccccc. Sets the color of a thumbnail's background.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailBgColorHover</div>
+                            <div class="info">(color hex code). Default value: 000000. Sets the color of a thumbnail's background when hover.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailBorderSize</div>
+                            <div class="info">(value in pixels). Default value: 0. Sets the size of a thumbnail's border.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailBorderColor</div>
+                            <div class="info">(color hex code). Default value: cccccc. Sets the color of a thumbnail's border.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailBorderColorHover</div>
+                            <div class="info">(color hex code). Default value: 000000. Sets the color of a thumbnail's border when hover.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailPaddingTop</div>
+                            <div class="info">(value in pixels). Default value: 3. Sets the top padding value of a thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailPaddingRight</div>
+                            <div class="info">(value in pixels). Default value: 3. Sets the right padding value of a thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailPaddingBottom</div>
+                            <div class="info">(value in pixels). Default value: 3. Sets the bottom padding value of a thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">ThumbnailPaddingLeft</div>
+                            <div class="info">(value in pixels). Default value: 3. Sets the left padding value of a thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Lightbox Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">LightboxPosition</div>
+                            <div class="info">(document, gallery). Default value: document. If the value is document the lightbox is displayed over the web page, fitting in the browser's window, else the lightbox is displayed in the gallery's container.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxWindowColor</div>
+                            <div class="info">(color hex code). Default value: 000000. Sets the color for the lightbox window.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxWindowAlpha</div>
+                            <div class="info">(value from 0 to 100). Default value: 80. Sets the transparency for the lightbox window.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxLoader</div>
+                            <div class="info">(path to image). Sets the loader for the lightbox image.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxBgColor</div>
+                            <div class="info">(color hex code). Default value: 000000. Sets the color for the lightbox background.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxBgAlpha</div>
+                            <div class="info">(value from 0 to 100). Default value: 100. Sets the transparency for the lightbox background.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxMarginTop</div>
+                            <div class="info">(value in pixels). Default value: 70. Sets the top margin value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxMarginRight</div>
+                            <div class="info">(value in pixels). Default value: 70. Sets the right margin value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxMarginBottom</div>
+                            <div class="info">(value in pixels). Default value: 70. Sets the bottom margin value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxMarginLeft</div>
+                            <div class="info">(value in pixels). Default value: 70. Sets the top left value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxPaddingTop</div>
+                            <div class="info">(value in pixels). Default value: 10. Sets the top padding value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxPaddingRight</div>
+                            <div class="info">(value in pixels). Default value: 10. Sets the right padding value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxPaddingBottom</div>
+                            <div class="info">(value in pixels). Default value: 10. Sets the bottom padding value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxPaddingLeft</div>
+                            <div class="info">(value in pixels). Default value: 10. Sets the left padding value for the lightbox.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Lightbox Navigation Icons Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">LightboxNavigationPrev</div>
+                            <div class="info">(path to image). Uploads the image for lightbox navigation's previous button.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxNavigationPrevHover</div>
+                            <div class="info">(path to image). Uploads the image for lightbox navigation's previous hover button.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxNavigationNext</div>
+                            <div class="info">(path to image). Uploads the image for lightbox navigation's next button.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxNavigationNextHover</div>
+                            <div class="info">(path to image). Uploads the image for lightbox navigation's next hover button.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxNavigationClose</div>
+                            <div class="info">(path to image). Uploads the image for lightbox navigation's close button.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LightboxNavigationCloseHover</div>
+                            <div class="info">(path to image). Uploads the image for lightbox navigation's close hover button.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Caption Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">CaptionHeight</div>
+                            <div class="info">(value in pixels). Default value: 75. Sets caption’s height.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">CaptionTitleColo</div>
+                            <div class="info">(color hex code). Default value: eeeeee. Sets caption’s title color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">CaptionTextColor</div>
+                            <div class="info">(color hex code). Default value: dddddd. Sets caption’s text color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">CaptionScrollScrubColor</div>
+                            <div class="info">(color hex code). Default value: 777777. Sets scroll scrub color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">CaptionScrollBgColor</div>
+                            <div class="info">(color hex code). Default value: e0e0e0. Sets scroll background color.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Social Share Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">SocialShareEnabled</div>
+                            <div class="info">(true, false). Default value: true. Enables AddThis Social Share.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">SocialShareLightbox</div>
+                            <div class="info">(path to image). Uploads the image for lightbox social share button.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Tooltip Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">TooltipBgColor</div>
+                            <div class="info">(color hex code). Default value: ffffff. Sets tooltip background color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">TooltipStrokeColor</div>
+                            <div class="info">(color hex code). Default value: 000000. Sets tooltip stroke color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">TooltipTextColor</div>
+                            <div class="info">(color hex code). Default value: 000000. Sets tooltip text color.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                    
+                    <h5>Label Styles & Settings</h5>
+                    <ul class="settings">
+                        <li>
+                            <div class="property">LabelPosition</div>
+                            <div class="info">(bottom, top). Default value: bottom. Sets label’s position.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LabelTextColor</div>
+                            <div class="info">(color hex code). Default value: 000000. Sets label’s text color.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LabelTextColorHover</div>
+                            <div class="info">(color hex code). Default value: ffffff. Sets label’s text hover color.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                </section>
+                
+                <section id="how-to-add-content">
+                    <h2>How to add content</h2>
+                    <p>
+                        You have a JSON example in <strong>dopwgg/json/content.json</strong> and a XML example in <strong>dopwgg/xml/content.xml</strong>.
+                        <br /><br />
+                        For HTML, you must add in the container a list with class <strong>Content</strong>:
+                        <br /><br />
+                        <script type="syntaxhighlighter" class="brush: php; toolbar: false;">
+                            <![CDATA[
+                              <ul class=”Content”></ul>
+                            ]]>
+                        </script>
+                        <br />
+                        View Example 2 for an example.
+                    </p>
+                </section>
+                
+                <section id="content-description">
+                    <h2>Content description</h2>
+                    
+                    <ul class="settings">
+                        <li>
+                            <div class="property">Image</div>
+                            <div class="info">Add path to image (mandatory).</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">Thumb</div>
+                            <div class="info">Add path to thumbnail (mandatory).</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">CaptionTitle</div>
+                            <div class="info">Add caption title.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">CaptionText</div>
+                            <div class="info">Add caption text.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">Media</div>
+                            <div class="info">Add media (HTML, Flash, YouTube, Vimeo, etc.).<br /><br /> <strong>IMPORTANT</strong><br />For Media make sure that all the code is in one html tag. Iframe embedding code will work :).</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">Link</div>
+                            <div class="info">Add a link to thumbnail.</div>
+                            <br class="clear" />
+                        </li>
+                        <li>
+                            <div class="property">LinkTarget</div>
+                            <div class="info">The target the link opens in.</div>
+                            <br class="clear" />
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="faq">
+                    <h2>FAQ</h2>
+                    <ul class="faq">
+                        <li>
+                            <p class="question">
+                                1. Why does not the gallery appear in my website?
+                            </p>
+                            <p class="answer">
+                                1. The plugin files are not loaded on your page.
+                                <br /><br />
+                                2. If the gallery does not appear, it might be because there is a problem with the JavaScript in your website. If you cannot identify the problem, contact us, including in the message a link to the page where the problem appears. We will identify and fix the issue for you. However, we will not fix the problems that are not caused by this plugin.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="question">
+                                2. How do I remove rounded corners from thumbnails & images?
+                            </p>
+                            <p class="answer">
+                                Open file <em>dopwgg/assets/gui/css/jquery.dop.WallGridGallery.css</em> in an editor and change or remove <strong>border-radius</strong> properties.
+                                <br /><br />
+                                <script type="syntaxhighlighter" class="brush: css; toolbar: false;">
+                                <![CDATA[
+                                    -webkit-border-radius: ;
+                                    -moz-border-radius: ;
+                                    border-radius: ;
+                                ]]>
+                                </script>
+                            </p>
+                        </li>
+                    </ul>   
+                </section>
+
+                <section id="how-to-update">
+                    <h2>How to update</h2>
+                    <p>
+                        <strong>Latest Version: 1.9</strong>
+                    </p>
+                    <p>
+                        <strong>Please note:</strong><br />
+                        Make a <strong>backup</strong> of folder <strong>dopwgg</strong> from your web server.
+                    </p>
+                    <p>
+                        To update the Plugin, login to <a href="http://www.codecanyon.net/?ref=DOTonPAPER">CodeCanyon</a>, head over to your <strong>Downloads</strong> section and re-download the plugin like you did when you bought it.
+                    </p>
+                    <p>
+                        Extract the zip's contents, look for the <strong>sources/dopwgg</strong> folder, and after you have all the new files upload them using FTP to the your web server folder overwriting the old ones (this is why it's important to backup any changes you've made to the plugin files).
+                        <br />
+                        After, you add the settings and content files from the backup you did earlier.
+                        <br />
+                        If you didn't make any changes to the plugin files, you are free to overwrite them with the new ones without the risk of losing any plugins settings, and backwards compatibility is guaranteed.
+                    </p>
+                </section>
+                
+                <section id="changelog">
+                    <h2>Changelog</h2>
+                    <ul class="changelog">
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.9</strong>&nbsp;&nbsp;-&nbsp;&nbsp;05 May 2013
+                            </p>
+                            <ul>
+                                <li class="info">Bug Fixes:</li>
+                                <li>SEO fixes.</li>
+                                <li>Responsive Media bug fix.</li>
+                                <li>AddThis fixed.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.8</strong>&nbsp;&nbsp;-&nbsp;&nbsp;30 March 2013
+                            </p>
+                            <ul>
+                                <li class="info">Bug Fixes:</li>
+                                <li>Change caption colors bug fix.</li>
+                                <li>Gallery resize on hidden elements bug fix.</li>
+                                <li>Setting number of columns bug fix.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.7</strong>&nbsp;&nbsp;-&nbsp;&nbsp;31 January 2013
+                            </p>
+                            <ul>
+                                <li class="info">New Features:</li>
+                                <li>Remove lightbox margins on mobile devices.</li>
+                                <li>Set thumbnails size when gallery is responsive on mobile devices.</li>
+                                
+                                <li class="info last">Bug Fixes:</li>
+                                <li>Lightbox display bug on Chrome is fixed.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.6</strong>
+                            </p>
+                            <ul>
+                                <li class="info">Bug Fixes:</li>
+                                <li>Small bugs fixes.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.5</strong>
+                            </p>
+                            <ul>
+                                <li class="info">New Features:</li>
+                                <li>AddThis Social Share added.</li>
+                                
+                                <li class="info last">Bug Fixes:</li>
+                                <li>Small bugs fixes.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.4</strong>
+                            </p>
+                            <ul>
+                                <li class="info">New Features:</li>
+                                <li>Responsive layout added.</li>
+                                
+                                <li class="info last">Bug Fixes:</li>
+                                <li>Minor bugs fixes.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.3</strong>
+                            </p>
+                            <ul>
+                                <li class="info">New Features:</li>
+                                <li>Caption added.</li>
+                                <li>Edit the gallery from HTML or XML/JSON file(s).</li>
+                                <li>Navigation buttons are now images.</li>
+                                <li>Transition between lightbox items changed to fade.</li>
+                                <li>You can add Youtube & Vimeo videos, HTML, Flash ...</li>
+                                <li>You can display thumbnail's info in a tooltip or label.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.2</strong>
+                            </p>
+                            <ul>
+                                <li class="info">New Features:</li>
+                                <li>Use one finger on touchscreen devices to navigate through the gallery.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.1</strong>
+                            </p>
+                            <ul>
+                                <li class="info">New Features:</li>
+                                <li>You can add links to thumbnails.</li>
+                                
+                                <li class="info last">Bug Fixes:</li>
+                                <li>Height bug fixed.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="date">
+                                <strong>Version 1.0</strong>&nbsp;&nbsp;-&nbsp;&nbsp;20 February 2011
+                            </p>
+                            <ul>
+                                <li>Initial release.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="assets">
+                    <h2>Assets</h2>
+                    <ul class="assets">
+                        <li>
+                            <h5>Images</h5>
+                            <strong>Credits & Licence:</strong><br />
+                            <div class="text">
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image01.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/33834913@N00/1157510788/">Panoramas</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image02.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/31246066@N04/5171147438/">Ian Sane</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image03.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/43355249@N00/2115782565/">szeke</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image05.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/35557234@N07/6094814673/">Zach Dischner</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image06.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/29638083@N00/4017491700/">lrargerich</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image07.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/77316550@N00/3090457505/">nosha</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image11.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/8285539@N07/3784167663/">Chi King</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image12.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/29059230@N00/4033077356/">Vvillamon</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image13.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/83646108@N00/3704435355/">(matt)</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/l-image14.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/59319911@N00/4751570586/">Ben Fredericson (xjrlokix)</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                                
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image01.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/22646823@N08/2627037759/" target="_blank">country_boy_shane</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image02.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/22646823@N08/2688072771/" target="_blank">country_boy_shane</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image03.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/22646823@N08/2688066139/" target="_blank">country_boy_shane</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div> 
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image04.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/22646823@N08/2645003283/" target="_blank">country_boy_shane</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image05.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/37153080@N00/3691522967/" target="_blank">Яick Harris</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image06.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/44345361@N06/4387215052/" target="_blank">VinothChandar</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image07.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/71284091@N00/3181676023/" target="_blank">craigfinlay</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image08.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/71284091@N00/3182349000/" target="_blank">craigfinlay</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div> 
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image09.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/82453324@N00/535817413/" target="_blank">Rietje Swart</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image10.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/14534290@N04/4506964719/" target="_blank">overgraeme</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image11.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/27888006@N05/3867672438/" target="_blank">Vincepal</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image12.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/22646823@N08/2651832395/" target="_blank">country_boy_shane</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div> 
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image13.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/41984025@N08/5227155246/" target="_blank">erik_mauer</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image14.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/7416936@N05/4144453545/" target="_blank">A. Strakey</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image15.jpg" alt="" />
+                                </div>>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/48385518@N06/5855610037/" target="_blank">CraXplore</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+
+                                <div class="image">
+                                    <img src="assets/gui/images/preview-images/a-image16.jpg" alt="" />
+                                </div>
+                                <div class="credits">
+                                    Photo Credit: <a href="http://www.flickr.com/photos/69135870@N00/6919674132/" target="_blank">mendhak</a>
+                                    <br />
+                                    Licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons (commercial)</a>
+                                </div>
+                                <br class="clear" />
+                            </div>
+                        </li>
+                        <li>
+                            <h5>jScrollPane (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 2.0<br />
+                            <strong>Link:</strong> <a href="http://jscrollpane.kelvinluck.com/" target="_blank">jscrollpane.kelvinluck.com</a><br />
+                            <strong>Author:</strong> <a href="http://www.kelvinluck.com/" target="_blank">Kelvin Luck</a><br />
+                            <strong>Licence:</strong> Dual licensed under the MIT and GPL licenses.
+                        </li>
+                        <li>
+                            <h5>Mousewheel (jQuery Plugin)</h5>
+                            <strong>Version:</strong> 3.0.6<br />
+                            <strong>Link:</strong> <a href="http://brandonaaron.net/code/mousewheel/docs" target="_blank">www.brandonaaron.net/code/mousewheel/docs</a><br />
+                            <strong>Author:</strong> <a href="http://www.brandonaaron.net/" target="_blank">Brandon Aaron</a><br />
+                            <strong>Licence:</strong> Released under MIT license.
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="support">
+                    <h2>Support</h2>
+                    <p>
+                    	If you did not find the answer you were looking for in the given documentation, please access our <a href="http://envato-support.dotonpaper.net/" target="_blank">Support Forums</a>. If you cannot find the answer to your issue, post a new topic, describing the problem you are having. Please add in your message a link to where you use the item or any other stuff that might be relevant (don’t include any passwords or any confidential information).
+                    </p>
+                    <p>
+                        <strong>Note:</strong>
+                        <br />
+                        On our <a href="http://envato-support.dotonpaper.net/" target="_blank">Support Forums</a> you need to login and confirm the <strong>Item Purchase Code</strong> for the item you need help with, which you can get it from <em>Envato Marketplace</em> -> <em>Sign In into your Account</em> -> <em>Downloads</em> -> <em>Licence Certificate on the purchased item</em>.
+                    </p>
+                    <p>
+                        <img src="assets/gui/images/purchase-code.png" alt="" />
+                    </p>
+                    <p>
+                        <strong>Work time:</strong>
+                        <br />
+                        07:00 (07:00 AM) – 16:00 (04:00 PM) GMT | Working days only (Monday – Friday)
+                    </p>
+                    <p>
+                        <strong>We do NOT provide support in comments section. Please use it for presale questions only.</strong>
+                    </p>
+                    <h3>Disclaymer</h3>
+                    <p class="disclaymer">
+                        <em>
+                            If you buy an Envato item, according to Envato rules, you are not entitled to support or free customizations.<br />
+                            WE WILL OFFER FREE SUPPORT only for bugs, item related issues and very small modifications(a few minutes of work). Everything else will be considered as custom work, for which we charge $35/hour.<br /> 
+                            Offering support will help us improve and fix the bugs in our products and a great way to do this is to see what problem appear when people use them.<br />
+                            If your request for a feature has been made by other people is it possible, but not a rule, to add that feature in a future update. Please don't buy the item if a feature doesn't exist and you need it. We will not add it for you in record time. If you are not sure if the feature exists please ask first.  
+                        </em>
+                    </p>
+                </section>
+
+                <section>
+                    <p class="info">
+                        <strong>PS: Do not forget to rate this item
+                        &nbsp;<img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />
+                        <img alt="" class="star" src="http://2.envato-static.com/assets/common/icons-buttons/rating/star-on-24a8d2589eca9f34bc2ff72a59bd9af7.png" />.</strong>
+                    </p>                
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
